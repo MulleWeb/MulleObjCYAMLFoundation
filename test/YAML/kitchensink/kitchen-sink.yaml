@@ -1,0 +1,77 @@
+---
+# A "kitchen sink" YAML property file. The kitchen-sink test parses this,
+# writes it back out as YAML with MulleYAMLWriter, parses that again and
+# requires both property lists to be equal.
+#
+# It deliberately mixes every scalar flavor, quoting, flow and block
+# collections, anchors and a merge key, empty containers and unicode.
+
+title: Kitchen Sink
+version: 2
+flag: true
+maybe: false
+nothing: ~
+empty_string: ""
+count: 42
+negative: -7
+octal: 010
+hex: 0x1f
+binary_int: 0b1010
+big: 1_000_000
+ratio: 1.2
+small: 0.001
+infinity: .inf
+as_string_bool: "yes"
+as_string_num: "08"
+as_string_float: "1.20"
+timestamp: 2024-01-02
+clock: 1:30
+
+author:
+  name: Nat
+  email: nat@example.com
+  admin: yes
+
+tags:
+  - one
+  - two
+  - "three four"
+
+matrix:
+  - [ 1, 2, 3 ]
+  - [ 4, 5, 6 ]
+
+people:
+  - name: Alice
+    age: 30
+  - name: Bob
+    age: 25
+
+flow: { a: 1, b: 2, c: [ p, q, r ] }
+
+defaults: &defaults
+  color: blue
+  size: large
+
+merged:
+  <<: *defaults
+  size: small
+
+literal: |
+  first line
+  second line
+
+folded: >
+  a folded
+  sentence
+
+unicode: "naïve café — 日本語"
+
+nested:
+  deeper:
+    deepest: 1
+  empty_map: {}
+  empty_list: []
+
+1: one
+2: two

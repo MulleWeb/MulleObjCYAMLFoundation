@@ -1,0 +1,35 @@
+== detected as YAML
+  mapping    parsed   format=YAML     {
+    tags = (
+        one,
+        two
+    );
+    title = "My Post";
+}
+  sequence   parsed   format=YAML     (
+    one,
+    two
+)
+  document   parsed   format=YAML     {
+    title = "My Post";
+}
+  comment    parsed   format=YAML     {
+    title = "My Post";
+}
+== detected as something else
+  openstep   parsed   format=OpenStep {
+    a = b;
+}
+  flow       exception: NSInvalidArgumentException: No installed parser for plist format "JSON"
+== forced YAML
+  flow       parsed   format=YAML     (
+    one,
+    two
+)
+  mapping    parsed   format=YAML     {
+    tags = (
+        one,
+        two
+    );
+    title = "My Post";
+}

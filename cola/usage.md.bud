@@ -1,0 +1,59 @@
+## Usage
+
+### Reading YAML
+
+``` objc
+#import <MulleObjCYAMLFoundation/MulleObjCYAMLFoundation.h>
+
+MulleYAMLParser   *parser;
+id                plist;
+
+parser = [MulleYAMLParser parser];
+plist  = [parser parseData:data];
+if( ! plist)
+   mulle_printf( "%@\n", [parser problem]);
+```
+
+Through the plist API the YAML format has to be forced:
+
+``` objc
+NSPropertyListFormat   format;
+
+format = MullePropertyListYAMLFormat;
+plist  = [NSPropertyListSerialization mullePropertyListFromData:data
+                                               mutabilityOption:0
+                                                         format:&format
+                                                   formatOption:MullePropertyListFormatOptionForce];
+```
+
+`NSString` has a shortcut:
+
+``` objc
+plist = [@"title: My Post\ntags:\n   - one\n   - two\n" mulleYAML];
+```
+
+### Writing YAML
+
+``` objc
+NSData   *data;
+
+data = [MulleYAMLWriter dataWithPropertyList:plist];
+```
+
+Or through the plist API:
+
+``` objc
+NSError   *error;
+NSData    *data;
+
+data = [NSPropertyListSerialization dataWithPropertyList:plist
+                                                   format:MullePropertyListYAMLFormat
+                                                  options:0
+                                                    error:&error];
+```
+
+### Detection
+
+YAML has no magic bytes, so a format detector looks for a `key:` mapping, a
+block sequence or a `---` document marker. A flow collection is not claimed,
+because it is indistinguishable from JSON. When in doubt, force the format.

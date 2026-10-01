@@ -1,0 +1,5 @@
+YAML parsing and writing for mulle-objc, so that YAML can be used as a property
+list format. Reading is built on [libyaml](//github.com/yaml/libyaml) and
+resolves plain scalars the way Ruby's Psych does: "yes" is a boolean, "08" is
+a string and "1.20" is a float. Writing produces block style YAML that reads
+back as the same property list.

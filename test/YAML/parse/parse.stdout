@@ -1,0 +1,47 @@
+== YAML as a property list format
+  format         YAML
+  title          string     My Post
+  tags           array      (
+    one,
+    two
+)
+  name           string     Nat
+  admin          number     YES
+== implicit typing
+  yes_bool       number     YES
+  no_bool        number     NO
+  on_bool        number     YES
+  off_bool       number     NO
+  quoted_yes     string     yes
+  int_dec        number     42
+  int_octal      number     8
+  int_hex        number     31
+  int_bin        number     5
+  int_under      number     1000
+  float_plain    number     1.2
+  float_inf      number     inf
+  null_tilde     null       NSNull
+  str_08         string     08
+== structures
+  flow           array      (
+    1,
+    2,
+    3
+)
+  block          array      (
+    a,
+    b
+)
+  deep           number     7
+== merge key
+  a              number     1
+  b              number     20
+== errors
+  bad mapping    nil
+  line           2
+  problem        line 2, column 4: mapping values are not allowed in this context
+  non-scalar key nil
+  problem        line 1, column 3: mapping key is a collection
+== empty document
+  empty          dict       {}
+  nil instead    yes

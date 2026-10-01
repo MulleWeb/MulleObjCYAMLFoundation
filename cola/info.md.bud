@@ -1,0 +1,8 @@
+## Info
+
+This library needs [libyaml](//github.com/yaml/libyaml) and
+[MulleFoundationBase](//github.com/MulleFoundation/MulleFoundationBase).
+
+A plain (unquoted) `!!str` scalar is still resolved through the core schema,
+so `!!str 123` reads as the number 123. Quote it (`!!str "123"`) to keep it a
+string. This is a known quirk, not a bug.

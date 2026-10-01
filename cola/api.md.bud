@@ -1,0 +1,12 @@
+## API
+
+### Classes
+
+| Class               | Description
+| ------------------- | ----------------------------------------------
+| `MulleYAMLParser`   | reads YAML into a property list
+| `MulleYAMLWriter`   | writes a property list as YAML
+
+`NSPropertyListSerialization( YAML )` registers `MullePropertyListYAMLFormat`
+as both a readable and a printable property list format. `NSString` gets a
+convenience `-mulleYAML` method.

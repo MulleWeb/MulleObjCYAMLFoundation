@@ -1,0 +1,40 @@
+{
+   project =
+   {
+      description="🍲 YAML support for mulle-objc";
+      domain="github";
+      language="c";
+      dialect="objc";
+      name="MulleObjCYAMLFoundation";
+      user="MulleWeb";
+      repo="MulleObjCYAMLFoundation";
+      homepage="https://github.com/MulleWeb/MulleObjCYAMLFoundation";
+      license="BSD-3 LICENSED";
+   };
+   dependencies =
+   (
+      {
+         domain="github";
+         name="libyaml";
+         repo="libyaml";
+         url="https://github.com/yaml/libyaml";
+         user="yaml";
+      },
+      {
+         description="🧱 MulleFoundationBase amalgamates Foundations projects";
+         domain="github";
+         name="MulleFoundationBase";
+         repo="MulleFoundationBase";
+         url="https://github.com/MulleFoundation/MulleFoundationBase";
+         user="MulleFoundation";
+      },
+      {
+         description="📒 Lists mulle-objc runtime information contained in executables.";
+         domain="github";
+         name="mulle-objc-list";
+         repo="mulle-objc-list";
+         url="https://github.com/mulle-objc/mulle-objc-list";
+         user="mulle-objc";
+      }
+   );
+}

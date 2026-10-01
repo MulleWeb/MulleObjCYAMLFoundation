@@ -1,0 +1,19 @@
+ok   scalar string
+ok   scalar int
+ok   scalar float
+ok   scalar float1
+ok   scalar bool
+ok   null
+ok   empty string
+ok   string bool
+ok   string octal
+ok   string float
+ok   unicode
+ok   quotes
+ok   newline
+ok   flat mapping
+ok   nested mapping
+ok   nested sequence
+ok   empty containers
+ok   quoting
+all roundtrips passed

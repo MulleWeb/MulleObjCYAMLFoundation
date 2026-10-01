@@ -1,0 +1,75 @@
+roundtrip ok, 33 top level keys
+== values after the round trip
+  title            Kitchen Sink
+  flag             YES
+  nothing          NSNull
+  octal            8
+  infinity         inf
+  as_string_num    08
+  admin            YES
+  size             small
+  deepest          1
+== normalized yaml
+1: one
+2: two
+as_string_bool: "yes"
+as_string_float: "1.20"
+as_string_num: "08"
+author:
+  admin: true
+  email: "nat@example.com"
+  name: Nat
+big: 1000000
+binary_int: 10
+clock: "1:30"
+count: 42
+defaults:
+  color: blue
+  size: large
+empty_string: ""
+flag: true
+flow:
+  a: 1
+  b: 2
+  c:
+    - p
+    - q
+    - r
+folded: "a folded sentence\n"
+hex: 31
+infinity: .inf
+literal: "first line\nsecond line\n"
+matrix:
+  - - 1
+    - 2
+    - 3
+  - - 4
+    - 5
+    - 6
+maybe: false
+merged:
+  color: blue
+  size: small
+negative: -7
+nested:
+  deeper:
+    deepest: 1
+  empty_list: []
+  empty_map: {}
+nothing: null
+octal: 8
+people:
+  - age: 30
+    name: Alice
+  - age: 25
+    name: Bob
+ratio: 1.2
+small: 0.001
+tags:
+  - one
+  - two
+  - three four
+timestamp: 2024-01-02
+title: Kitchen Sink
+unicode: "naïve café — 日本語"
+version: 2

@@ -1,0 +1,57 @@
+== block scalars
+  literal        string     yes
+second line
+
+  folded         string     a folded line
+
+== explicit tags
+  str_quoted     string     123
+  str_plain      number     123
+  int_str        number     42
+  float_str      number     1.5
+  bool_str       number     YES
+  null_str       null       NSNull
+== quoting
+  single         string     yes
+  double         string     a	b
+
+  plain_num      string     08
+== flow collections
+  a              number     1
+  b              number     2
+  seq            array      (
+    one,
+    two,
+    three
+)
+== anchors and merge
+  alpha          number     1
+  beta           number     2
+  m_a            number     1
+  m_b            number     20
+  b1_a           number     1
+  b1_b           number     2
+  b2_c           number     30
+== stays string
+  date           string     2024-01-02
+  time           string     1:30
+  binary         string     aGVsbG8=
+== scalar keys
+  1              string     one
+  2              string     two
+  null key       present
+== root types
+  scalar         string     just a scalar
+  sequence       array      (
+    a,
+    b
+)
+  empty map      dict       {}
+  empty seq      array      ()
+== errors
+  unclosed flow  nil
+  line           2
+  problem        line 2, column 1: did not find expected ',' or ']'
+  bad merge      nil
+  line           3
+  problem        line 3, column 4: a "<<" merge key needs a mapping or a sequence of mappings

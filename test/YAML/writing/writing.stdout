@@ -1,0 +1,49 @@
+== mapping
+count: 42
+layout: post
+published: true
+ratio: 1.2
+subtitle: null
+title: My Post
+== quoting
+bool_word: "yes"
+colon: "a: b"
+dash: "- lead"
+empty: ""
+exponent_word: "1e5"
+float_word: "1.20"
+hash: "# hash"
+leading_zero: "08"
+null_word: "null"
+plain: plain
+quotes: "say \"hi\""
+tilde: "~"
+unicode: "naïve café — 日本語"
+== nested
+author:
+  admin: false
+  name: Nat
+tags:
+  - one
+  - two
+== sequences
+- a
+- b
+- "y": 2
+  x: 1
+- - c
+  - d
+== empty
+empty_map: {}
+empty_seq: []
+== root_string
+hello
+== root_number
+-7
+== root_bool
+true
+== floats
+half: 2.5
+inf: .inf
+nan: .nan
+neg_inf: -.inf
