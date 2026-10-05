@@ -9,7 +9,7 @@
       user="MulleWeb";
       repo="MulleObjCYAMLFoundation";
       homepage="https://github.com/MulleWeb/MulleObjCYAMLFoundation";
-      license="BSD-3 LICENSED";
+      license="BSD-3-Clause";
    };
    dependencies =
    (
@@ -31,9 +31,9 @@
       {
          description="📒 Lists mulle-objc runtime information contained in executables.";
          domain="github";
-         name="mulle-objc-list";
-         repo="mulle-objc-list";
-         url="https://github.com/mulle-objc/mulle-objc-list";
+         name="mulle-objc-tools";
+         repo="mulle-objc-tools";
+         url="https://github.com/mulle-objc/mulle-objc-tools";
          user="mulle-objc";
       }
    );

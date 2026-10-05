@@ -131,7 +131,7 @@ Install the requirements:
 |----------------------------------------------|-----------------------
 | [libyaml](https://github.com/yaml/libyaml)             | 
 | [MulleFoundationBase](https://github.com/MulleFoundation/MulleFoundationBase)             | 🧱 MulleFoundationBase amalgamates Foundations projects
-| [mulle-objc-list](https://github.com/mulle-objc/mulle-objc-list)             | 📒 Lists mulle-objc runtime information contained in executables.
+| [mulle-objc-tools](https://github.com/mulle-objc/mulle-objc-tools)             | 📒 Lists mulle-objc runtime information contained in executables.
 
 Download the latest [tar](https://github.com/MulleWeb/MulleObjCYAMLFoundation/archive/refs/tags/latest.tar.gz) or [zip](https://github.com/MulleWeb/MulleObjCYAMLFoundation/archive/refs/tags/latest.zip) archive and unpack it.
 
