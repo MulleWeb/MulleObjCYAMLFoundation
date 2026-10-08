@@ -90,6 +90,10 @@ as both a readable and a printable property list format. `NSString` gets a
 convenience `-mulleYAML` method.
 
 
+## Documentation & Guides
+
+* [API Summary](asset/dox/api/toc)
+
 ## Info
 
 This library needs [libyaml](//github.com/yaml/libyaml) and
